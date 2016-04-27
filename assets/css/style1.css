@@ -1,0 +1,285 @@
+/*B A C K G R O U N D*/
+#background {
+    background: url('home.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .85;
+}
+
+body {
+	margin: 0;
+}
+
+/* S I D E B A R*/
+.clear {
+	clear: both;
+}
+
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+.sidebar-container {
+	position: fixed;
+	padding-top: 25px;
+	width: 200px;
+	height: 105%;
+	background-color: black;
+	-webkit-transform: translateX(-200px);
+	-webkit-transition: all 0.3s;
+}
+
+.sidebar-item {
+	font-weight: 700;
+	font-size: 16px;
+	color: white;
+	padding: 15px 20px 15px 20px;
+	cursor: pointer;
+}
+
+
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+.sidebar-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(200px);
+	-moz-transform: translateX(200px);
+	transform: translateX(200px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* T I T L E */
+.title {
+	color: white;
+	width: 50%;
+    transform: translateX(50%);
+
+    font-size: 70px;
+	font-weight: 780;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+/* M O D A L */
+
+#modal-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#modal-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#modal-box {
+	border: 1px solid white;
+    width: 500px;
+    height: 260px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 100
+}
+
+.modal-heading {
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.modal-subheading {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+#modal-content{
+    padding: 20px;
+}
+
+.input{
+	border: 3px solid white;
+	padding: 10px;
+	background: transparent;
+	margin: 0px;
+	margin-bottom: 10px;
+	width: 420px;
+	font-size: 12px;
+	font-weight: 700;
+	color: white;
+	font-style: italic;
+}
+
+.input::-webkit-input-placeholder  {
+	color: white;
+	opacity: .7;
+}
+
+#modal-footer{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 35px 10px 10px;
+    float: right;
+}
+
+.footer {
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* A B O U T */
+.mv-wrapper {
+	text-align: center;
+}
+
+.mv {
+	color: white;
+	width: 50%;
+	padding-top: 150px;
+    transform: translateX(56%);
+
+    font-size: 20px;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+
+#about-circles {
+	text-align: center;
+}
+
+#circle {
+	background-color: white;
+	position: relative;
+	display: inline-block;
+
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+	text-align: center;
+	color: black;
+	margin: 100px 20px 20px 20px;
+	padding: 10px;
+
+	opacity: .8;
+	transition: .2s;
+	cursor: pointer;
+}
+
+#circle:hover {
+	opacity: 1;
+}
+
+.read-circle {
+	background: url('read.jpg');
+}
+
+.write-circle {
+	background: url('write.jpg');
+}
+
+.pray-circle {
+	background: url('pray.jpg');
+}
+
+#heading {
+	position: relative;
+	font-size: 20px;
+	top: 15%;
+	font-weight: 750;
+	letter-spacing: .4rem;
+}
+
+
+#description {
+	position: relative;
+	font-size: 15px;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
