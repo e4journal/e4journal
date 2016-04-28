@@ -47,7 +47,7 @@ $(document).ready(function() {
       var passwords=['UiC','Ephesians4:29'];
       for(var i=0;i<passwords.length;i++) {
           if(input==passwords[i]){
-              window.location.href = "index3.html";
+              window.location.href = "write.html";
               return true;
           }
       }
